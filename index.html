@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Promise Day Surprise 💖</title>
+<style>
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:100vh;
+  color:#fff;
+  text-align:center;
+}
+.card{
+  background:rgba(0,0,0,0.3);
+  padding:30px;
+  border-radius:20px;
+  width:90%;
+  max-width:400px;
+}
+button{
+  background:#fff;
+  color:#ff5e7e;
+  border:none;
+  padding:15px 25px;
+  border-radius:30px;
+  font-size:18px;
+  cursor:pointer;
+  margin-top:20px;
+}
+.promise{
+  display:none;
+  font-size:18px;
+  margin-top:20px;
+  line-height:1.6;
+}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <h1>Promise Day 💍</h1>
+  <p>Tap the button to see my promise 💖</p>
+  <button onclick="showPromise()">Open My Promise</button>
+
+  <div class="promise" id="promiseText">
+    <p>
+      I promise to choose you every day, even on days when life is hard.  
+      <br><br>
+      I promise to listen when you speak,  
+      to hold your hand when you’re scared,  
+      and to stand by you when the whole world feels heavy.  
+      <br><br>
+      I don’t promise perfection,  
+      but I promise **honesty, loyalty, and endless love**.  
+      <br><br>
+      You are my today, my tomorrow, and my always ❤️
+    </p>
+  </div>
+</div>
+
+<script>
+function showPromise(){
+  document.getElementById("promiseText").style.display="block";
+}
+</script>
+
+</body>
+</html>
